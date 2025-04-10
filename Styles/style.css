@@ -9,8 +9,10 @@ a {
     color: black;
 }
 
-p {
+#projects p {
     font-family: "Barlow", sans-serif;
+    text-align: justify;
+    padding: 3px;
 }
 
 
