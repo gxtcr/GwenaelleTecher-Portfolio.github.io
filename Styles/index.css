@@ -112,7 +112,6 @@ h1 {
 .contact {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .contact p {
     font-size: 23px;
