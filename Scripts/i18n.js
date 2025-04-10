@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             "home": "Home",
                             "projects": "Projects",
                             "contact": "Contact",
-                            "cv": "CV"
+                            "cv": "Resume"
                         },
                         "welcome": {
                             "title": "Welcome",
