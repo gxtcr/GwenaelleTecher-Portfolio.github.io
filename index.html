@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+        <title>Gwenaëlle Techer - Portfolio </title>
+        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="stylesheet" href="Styles/index.css">
+        <link rel="icon" href="images/Logo.png" type="image/icon type">
+
+        <script src="Scripts/i18n.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.16/i18next.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.4/i18nextBrowserLanguageDetector.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/2.0.5/jquery-i18next.min.js"></script>
+
+        <script src="Scripts/index.js" defer></script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+            <img src="Images/Logo.png" alt="Gwenaelle Techer's Logo">
+            </div>
+            <nav>
+                
+                <a href="#Home" data-i18n="header.home" >Home</a>
+                
+                <a href="#projects" data-i18n="header.projects">Projects</a>
+
+                <a href="#contact" data-i18n="header.contact" >Contact</a>
+                
+                <a href="Images/TECHER Gwenaelle CV-DEV.pdf" target="_blank" data-i18n="header.cv">CV</a>
+
+                <div class="language-switch">
+                    <button id="language-toggle">
+                        <img id="language-flag" src="Images/icons8-grande-bretagne-50.png" alt="English/French">
+                        <span data-i18n="language.switch">EN</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+                <section class="Animation-welcome">
+                    <div class="welcome-container">
+                        <div class="welcome-text" data-i18n="welcome.title">Welcome</div>
+                        <div class="welcome-subtitle" data-i18n="welcome.subtitle">to Gwenaëlle Techer's Portfolio</div>
+                    </div>
+                </section>
+
+            </section>
+            <section>
+                <div class="about-me" id="Home">
+                    <h1 data-i18n="about.title">Who Am I?</h1>
+                    <div class="about-me-text">
+                    <img src="Images/TECHER Gwenaelle pic.jpg" alt="Photo of Gwenaelle Techer">
+                    <p data-i18n="about.text">Hi, I'm a fullstack developer with a passion for frontend development. I've built a strong foundation in web technologies including HTML, CSS, and JavaScript for creating responsive and engaging user interfaces. As a beginner, I have foundational knowledge in Java and PHP, which allows me to start building server-side applications and understand the basics of database management.</p>
+                    </div>
+                </div>
+            </section>
+
+            <h1 data-i18n="skills.title">Technical skills</h1>
+            <section class="technical-skills">
+                
+                <img src="Images/icons8-html-5-64.png" alt="icon HTML">
+                <img src="Images/icons8-css3-64.png" alt="icon CSS">
+                <img src="Images/icons8-javascript-64.png" alt="icon JavaScript">
+                <img src="Images/icons8-vue-js-64.png" alt="icon Vue js">
+                <img src="Images/icons8-angular-64.png" alt="icon Angular">
+                <img src="Images/icons8-github-64.png" alt="icon Github">
+
+            </section>
+
+            <h1 id="projects" data-i18n="projects.title">Projects</h1>
+            <section class="container-websites">
+                <div class="browser-container">
+                    <!-- Contrôles du navigateur (style macOS) -->
+                    <div class="browser-controls">
+                        <button class="close-btn"></button>
+                        <button class="minimize-btn"></button>
+                        <button class="maximize-btn"></button>
+                        <div class="address-bar">https://gxtcr.github.io/RobbieLensPhotography.github.io/</div>
+                    </div>
+                    
+                    <!-- Onglets du navigateur -->
+                    <ul class="tabs">
+                        <li class="tab active" data-tab="tab1"><a href="https://gxtcr.github.io/RobbieLensPhotography.github.io/" target="_blank">Accueil - Robbie Lens</a><img src="Images/icon-link.png" alt="icon of link"></li>
+                    </ul>
+                    
+                    <!-- Contenu des onglets -->
+                    <div class="tab-content active" id="tab1">
+                        <img src="Images/RobbieLens.png" alt="Preview du site Robbie Lens">
+                        <div class="website-info">
+                            <p data-i18n="projects.tippy_type_description">Ceci est le contenu du premier onglet avec une image.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="browser-container">
+                    <!-- Contrôles du navigateur (style macOS) -->
+                    <div class="browser-controls">
+                        <button class="close-btn"></button>
+                        <button class="minimize-btn"></button>
+                        <button class="maximize-btn"></button>
+                        <div class="address-bar">https://gxtcr.github.io/TippyType.github.io/</div>
+                    </div>
+                    
+                    <!-- Onglets du navigateur -->
+                    <ul class="tabs">
+                        <li class="tab active" data-tab="tab1"><a href="https://gxtcr.github.io/TippyType.github.io/" target="_blank">TippyType</a><img src="Images/icon-link.png" alt="icon of link"></li>
+                    </ul>
+                    
+                    <!-- Contenu des onglets -->
+                    <div class="tab-content active" id="tab1">
+                        <img src="Images/TippyType.png" alt="Preview du site TippyType">
+                        <p data-i18n="projects.robbie_lens_description">Ceci est le contenu du premier onglet avec une image.</p>
+                    </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h1 data-i18n="contact.title">Contact</h1>
+                <a href="mailto:gwentech@hotmail.fr?subject=Mail from Portfolio">
+                    <div class="send-email-btn">
+                        <div class="btn-text">
+                            <img src="Images/email.png" class="btn-icon" alt="Email icon">
+                            <span>gwentech@hotmail.fr</span>
+                        </div>
+                        <div class="btn-hover-content">
+                            <span data-i18n="contact.send_email">Send email</span>
+                        </div>
+                    </div>
+                </a>
+                <p data-i18n="contact.or">or</p>
+                <div class="call-me-btn">
+                    <div class="btn-text">
+                        <img src="Images/phone-call.png" class="btn-icon" alt="Phone icon">
+                        <span>+33 7 81 23 58 25</span>
+                    </div>
+                    <div class="btn-hover-content">
+                        <span data-i18n="contact.call_me">Call me</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <section class="copyright-footer">
+                <p data-i18n="footer.copyright">Developped and designed by Gwenaëlle Techer</p>
+            </section>
+
+            <section class="contact-footer">
+                <a href="https://github.com/gxtcr" target="_blank"><img src="Images/icons8-github-50.png" alt="Github icon"></a>
+                <a href="https://www.linkedin.com/in/gwena%C3%ABlletecher/" target="_blank"><img src="Images/icons8-linkedin-50.png" alt="Linkedin icon"></a>
+            </section>
+        </footer>
+
+
+
+    </body>
+
+
+
+
+</html>

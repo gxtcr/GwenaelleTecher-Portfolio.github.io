@@ -1,0 +1,36 @@
+{
+"header": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "contact": "Contact",
+    "cv": "CV"
+},
+"welcome": {
+    "title": "Bienvenue",
+    "subtitle": "sur le Portfolio de Gwenaëlle Techer"
+},
+"about": {
+    "title": "Qui suis-je ?",
+    "text": "Bonjour, je suis une développeuse fullstack passionnée par le développement frontend. J'ai établi une solide base dans les technologies web, notamment HTML, CSS et JavaScript pour créer des interfaces utilisateur réactives et engageantes. En tant que débutante, j'ai des connaissances fondamentales en Java et PHP, ce qui me permet de commencer à construire des applications côté serveur et à comprendre les bases de la gestion de bases de données."
+},
+"skills": {
+    "title": "Compétences techniques"
+},
+"projects": {
+    "title": "Projets",
+    "robbie_lens_description": "Un site web portfolio de photographie présentant le travail de Robbie Lens.",
+    "tippy_type_description": "Une application de test de vitesse de frappe pour améliorer vos compétences en dactylographie."
+},
+"contact": {
+    "title": "Contact",
+    "or": "ou",
+    "send_email": "Envoyez moi un email",
+    "call_me": "Appelez moi"
+},
+"footer": {
+    "copyright": "Développé et designé par Gwenaëlle Techer"
+},
+"language": {
+    "switch": "EN"
+}
+}
