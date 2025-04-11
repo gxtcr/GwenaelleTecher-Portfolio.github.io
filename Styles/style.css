@@ -1,7 +1,3 @@
-body {
-    background-color: #fffcf5;
-}
-
 
 a {
     font-family: "Montserrat", sans-serif;
@@ -16,3 +12,437 @@ a {
 }
 
 
+/*---------------------------------------------------------------------*/
+/*Responsive*/
+
+/* Media Queries pour rendre le site responsive */
+
+/* Base styles */
+body {
+    background-color: #fffcf5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* for any devices with screen under 1200px */
+@media screen and (max-width: 1200px) {
+    .welcome-text {
+        font-size: 4.5em;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.8em;
+    }
+    
+    .about-me-text {
+        margin: 0 100px;
+        line-height: 2.2;
+    }
+    
+    .technical-skills {
+        gap: 50px;
+    }
+    
+    .container-websites {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .browser-container {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+}
+
+/* for tablet */
+@media screen and (max-width: 930px) {
+    nav a {
+        font-size: 2em;
+        gap: 20px;
+    }
+    
+    .logo img {
+        max-height: 150px;
+    }
+    
+    .welcome-text {
+        font-size: 3.5em;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.5em;
+    }
+    
+    .Animation-welcome {
+        height: 50vh;
+    }
+    
+    .about-me-text {
+        margin: 0 50px;
+        flex-direction: column;
+        line-height: 2;
+    }
+    
+    .about-me-text img {
+        padding-right: 0;
+        margin-bottom: 20px;
+        align-self: center;
+        width: 70%;
+    }
+    
+    .technical-skills {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .browser-container {
+        width: 85%;
+    }
+    
+    .tab-content img {
+        height: auto;
+        max-height: 450px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .or {
+        margin: 20px 15px;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .send-email-btn, .call-me-btn {
+        width: 230px;
+        height: 60px; /* Hauteur fixe plus grande pour tout afficher */
+        display: block;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+    }
+    
+    .btn-text, .btn-hover-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    
+    .btn-text span, .btn-hover-content span {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+    
+    .btn-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        flex-shrink: 0;
+    }
+    
+    /* Si l'écran devient trop petit, passer en colonne */
+    @media screen and (max-width: 650px) {
+        .contact {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .or {
+            margin: 10px 0;
+        }
+        
+        .send-email-btn, .call-me-btn {
+            width: 80%;
+            max-width: 300px;
+        }
+    }
+}
+
+
+/* for mobiles */
+
+@media screen and (max-width: 480px) {
+    /* Réinitialisation de base pour éviter les débordements */
+    * {
+        box-sizing: border-box;
+        column-width: auto !important;
+        column-count: 1 !important;
+    }
+    
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    .header-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-top: 30px; /* Espace pour le bouton de langue */
+    }
+    
+    .language-switch {
+        position: absolute !important;
+        top: 10px !important;
+        right: 3px !important; /* Augmenter la distance du bord droit */
+        z-index: 1000 !important;
+    }
+    
+    #language-toggle {
+        padding: 3px 6px;
+        border-width: 1px;
+    }
+    
+    #language-toggle img {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+    }
+    
+    #language-toggle span {
+        font-size: 0.8em;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 5px;
+    }
+    
+    nav a {
+        font-size: 1em;
+        margin: 3px;
+        padding: 5px;
+    }
+    
+    .Animation-welcome {
+        height: auto;
+        min-height: 200px;
+        padding: 20px 0;
+    }
+    
+    .welcome-container {
+        width: 90%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+    
+    .welcome-text {
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1em;
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+    
+
+    /* Correction spécifique pour la section "about-me" */
+    .about-me-text, .about-me-text p {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 10px !important;
+        text-align: justify !important;
+        display: block !important;
+        column-count: 1 !important;
+        column-width: auto !important;
+        column-gap: 0 !important;
+    }
+    
+    .about-me-text img {
+        display: block !important;
+        margin: 0 auto 20px auto !important;
+        width: 60% !important;
+        max-width: 250px !important;
+
+    }
+    
+    .technical-skills {
+        display: flex;
+        gap: 15px;
+
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .technical-skills img {
+        width: 35px;
+        height: 35px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .container-websites {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .browser-container {
+        width: 95%;
+        margin: 0 auto 30px auto;
+    }
+    
+    .tab-content img {
+        max-height: 200px;
+        width: auto;
+        object-fit: contain;
+    }
+    
+    .address-bar {
+        font-size: 8px;
+        padding: 2px 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .contact {
+        display: block !important;
+        width: 100% !important;
+        padding: 10px !important;
+        text-align: center !important;
+    }
+    
+    /* Style pour le "ou" au milieu */
+    .or {
+        display: block !important;
+        margin: 15px auto !important;
+        padding: 0 !important;
+        height: auto !important;
+        width: auto !important;
+    }
+    
+    .send-email-btn, .call-me-btn {
+        display: block !important;
+        width: 80% !important;
+        max-width: 300px !important;
+        margin: 10px auto !important;
+        padding: 0 !important;
+        height: 60px !important;
+        position: relative !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Style pour le texte des boutons */
+    .btn-text, .btn-hover-content {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+        padding: 5px !important;
+    }
+
+    .btn-text span, .btn-hover-content span {
+        font-size: 20px !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        max-width: 90% !important;
+    }
+    
+    .btn-icon {
+        width: 20px !important;
+        height: 20px !important;
+        margin-right: 8px !important;
+        flex-shrink: 0 !important;
+    }
+}
+
+/* pour les très petits écrans */
+@media screen and (max-width: 320px) {
+    .welcome-text {
+        font-size: 1em;
+    }
+    
+    .welcome-subtitle {
+        font-size: 0.8em;
+    }
+    
+    nav a {
+        font-size: 0.9em;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    .technical-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .send-email-btn, .call-me-btn {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-me-text, .welcome-text, .welcome-subtitle, .about-me-text p {
+        max-width: 100%;
+        width: auto;
+    }
+    
+    /* Fix pour les boutons de contact */
+    .send-email-btn .btn-text, .call-me-btn .btn-text,
+    .send-email-btn .btn-hover-content, .call-me-btn .btn-hover-content {
+        font-size: 0.85em;
+    }
+    
+    /* Pour éviter que le texte soit coupé */
+    main, section, div {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+}
