@@ -3,6 +3,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 nav {
@@ -427,10 +428,23 @@ html {
 }
 
 /*---------------------------------------------------------------------------------------*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    background-color: #fffcf5;
+}
+
 .language-switch {
     margin-left: 10px;
     margin-right: 10px;
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 10;
+
 }
 
 #language-toggle {
